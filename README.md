@@ -1,8 +1,6 @@
-# Xarm Robot Models and Configuration Repository
+# X-Arm Robot Models and Configuration Repository
 
-This repository provides **technical assets of the Xarm robot** for simulation and motion planning
-
-
+This repository provides **technical assets of the X-Arm robot** for simulation and motion planning
 
 ## Repository Overview
 
