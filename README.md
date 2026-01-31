@@ -53,12 +53,12 @@ xarm/
 
 
 
-## 2. USD / USDZ Models
+## 2. USDZ Models
 
 -  `xarm.usdz`: single-arm model
 -  `xarm_dual-arm.usdz`: dual-arm model
 
- USD models are directly usable in **NVIDIA Isaac Sim** and typically include:
+ USDZ models are directly usable in **NVIDIA Isaac Sim** and typically include:
 
 - Full articulation hierarchy
 - Physical properties (mass, inertia)
@@ -68,6 +68,26 @@ xarm/
  Typical use cases:
 
 - Robot simulation
+
+
+### Model Preview
+
+<table>
+<tr>
+<td>
+<figure style="text-align:center; margin:0;">
+<img src="./usdz_Preview/singal_arm.png" alt="Preview left" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
+<figcaption style="text-align:center; font-size:small; margin-top:6px;">Singal arm</figcaption>
+</figure>
+</td>
+<td>
+<figure style="text-align:center; margin:0;">
+<img src="./usdz_Preview/dual_arm.png" alt="Preview right" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
+<figcaption style="text-align:center; font-size:small; margin-top:6px;">Dual arm</figcaption>
+</figure>
+</td>
+</tr>
+</table>
 
 
 

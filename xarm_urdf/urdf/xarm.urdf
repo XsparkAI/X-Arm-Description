@@ -19,7 +19,7 @@
     <inertial>
       <origin
         xyz="-9.09789029626031E-05 -1.00838762111356E-06 0.0341142783974825"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
         value="0.630484112037129" />
       <inertia
@@ -33,10 +33,10 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/base_link.STL" />
+          filename="../meshes/base_link.glb" />
       </geometry>
       <material
         name="">
@@ -47,10 +47,10 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/base_link.STL" />
+          filename="../meshes/base_link.glb" />
       </geometry>
     </collision>
   </link>
@@ -59,7 +59,7 @@
     <inertial>
       <origin
         xyz="0.000681166801672071 -0.00046232914455336 0.045774892481422"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
         value="0.465086237348566" />
       <inertia
@@ -73,10 +73,10 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link1.STL" />
+          filename="../meshes/link1.glb" />
       </geometry>
       <material
         name="">
@@ -87,10 +87,10 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link1.STL" />
+          filename="../meshes/link1.glb" />
       </geometry>
     </collision>
   </link>
@@ -130,17 +130,12 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
-        rpy="1.5707963267949 0 0" />
+        xyz="-0.15 0 0"
+        rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link2.glb" />
+          filename="../meshes/link2.dae" />
       </geometry>
-      <material
-        name="">
-        <color
-          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
-      </material>
     </visual>
     <collision>
       <origin
@@ -175,7 +170,7 @@
     <inertial>
       <origin
         xyz="0.133032369395304 0.0530016058529144 0.000290607464783963"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
         value="0.839664047451371" />
       <inertia
@@ -189,10 +184,10 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link3.STL" />
+          filename="../meshes/link3.glb" />
       </geometry>
       <material
         name="">
@@ -203,10 +198,10 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link3.STL" />
+          filename="../meshes/link3.glb" />
       </geometry>
     </collision>
   </link>
@@ -233,7 +228,7 @@
     <inertial>
       <origin
         xyz="0.0666890671297201 0.061249505361484 0.00493164049114361"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
         value="0.455192806560725" />
       <inertia
@@ -247,10 +242,10 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link4.STL" />
+          filename="../meshes/link4.glb" />
       </geometry>
       <material
         name="">
@@ -261,10 +256,10 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link4.STL" />
+          filename="../meshes/link4.glb" />
       </geometry>
     </collision>
   </link>
@@ -291,7 +286,7 @@
     <inertial>
       <origin
         xyz="0.00248530581728849 1.71803824630881E-05 0.0400785531860572"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
         value="0.373508569742983" />
       <inertia
@@ -305,10 +300,10 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link5.STL" />
+          filename="../meshes/link5.glb" />
       </geometry>
       <material
         name="">
@@ -319,10 +314,10 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link5.STL" />
+          filename="../meshes/link5.glb" />
       </geometry>
     </collision>
   </link>
@@ -349,7 +344,7 @@
     <inertial>
       <origin
         xyz="0.0108106656274518 0.000127504395052592 0.00016010488602905"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
         value="0.0724468602058996" />
       <inertia
@@ -363,10 +358,10 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link6.STL" />
+          filename="../meshes/link6.glb" />
       </geometry>
       <material
         name="">
@@ -377,10 +372,10 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/link6.STL" />
+          filename="../meshes/link6.glb" />
       </geometry>
     </collision>
   </link>
@@ -407,7 +402,7 @@
     <inertial>
       <origin
         xyz="-0.00722300540551239 -2.86486663753245E-07 -0.0281150308975901"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <mass
         value="0.436099620967633" />
       <inertia
@@ -421,10 +416,10 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/gripper_base.STL" />
+          filename="../meshes/gripper_base.glb" />
       </geometry>
       <material
         name="">
@@ -435,10 +430,10 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="1.5707963267949 0 0" />
       <geometry>
         <mesh
-          filename="../meshes/gripper_base.STL" />
+          filename="../meshes/gripper_base.glb" />
       </geometry>
     </collision>
   </link>
@@ -498,9 +493,9 @@
 
   <link name="camera_mount">
       <visual>
-        <origin xyz="-0.0043 -0.075 0.1455" rpy="-1.55 3.1 0"/>
+        <origin xyz="-0.0043 -0.075 0.1455" rpy="0 3.1 0"/>
         <geometry>
-          <mesh filename="../meshes/camera_link.stl"/>
+          <mesh filename="../meshes/camera_link.glb"/>
         </geometry>
       </visual>
     </link>
@@ -511,9 +506,9 @@
     </joint>
     <link name="camera">
       <visual>
-        <origin xyz="0.04 -0.049 -0.075" rpy="3.25 0 -1.605"/>
+        <origin xyz="0.04 -0.049 -0.075" rpy="4.82 0 -1.605"/>
         <geometry>
-          <mesh filename="../meshes/camera_wrist.stl"/>
+          <mesh filename="../meshes/camera_wrist.glb"/>
         </geometry>
       </visual>
     </link>
