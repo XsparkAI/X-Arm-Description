@@ -14,19 +14,19 @@ This repository provides **technical assets of the X-Arm robot** for simulation 
 
 ```text
 xarm/
+├── preview_image/   
+│
 ├── xarm_curobo_config/           
-│   ├── xarm.yml                
-│   └── collision_xarm.yml       
+│   ├── collision_xarm.yml       
+│   └── xarm.yml                
 │
 ├── xarm_urdf/                   
 │   ├── meshes/                   
 │   └── urdf/
-│       └── xarm/
-│           ├── configuration/     
-│           ├── xarm.urdf          
-│           └── xarm.srdf          
+│       ├── xarm.srdf          
+│       └── xarm.urdf          
 │
-├── xarm_sinal-arm.usdz                     
+├── xarm_single-arm.usdz                     
 ├── xarm_dual-arm.usdz            
 │
 ├── LICENSE
@@ -72,18 +72,18 @@ xarm/
 
 ### Model Preview
 
+The image below displays the 3D asset previews for both the single-arm model and the dual-arm model
+
 <table>
 <tr>
 <td>
 <figure style="text-align:center; margin:0;">
-<img src="./usdz_Preview/singal_arm.png" alt="Preview left" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
-<figcaption style="display:block; width:100%; text-align:center; font-size:small; margin-top:6px;">Singal Arm</figcaption>
+<img src="./preview_image/singal_arm.png" alt="Preview left" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
 </figure>
 </td>
 <td>
 <figure style="text-align:center; margin:0;">
-<img src="./usdz_Preview/dual_arm.png" alt="Preview right" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
-<figcaption style="display:block; width:100%; text-align:center; font-size:small; margin-top:6px;">Dual Arm</figcaption>
+<img src="./preview_image/dual_arm.png" alt="Preview right" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
 </figure>
 </td>
 </tr>
