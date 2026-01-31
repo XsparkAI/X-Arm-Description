@@ -77,13 +77,13 @@ xarm/
 <td>
 <figure style="text-align:center; margin:0;">
 <img src="./usdz_Preview/singal_arm.png" alt="Preview left" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
-<figcaption style="text-align:center; font-size:small; margin-top:6px;">Singal arm</figcaption>
+<figcaption style="display:block; width:100%; text-align:center; font-size:small; margin-top:6px;">Singal Arm</figcaption>
 </figure>
 </td>
 <td>
 <figure style="text-align:center; margin:0;">
 <img src="./usdz_Preview/dual_arm.png" alt="Preview right" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
-<figcaption style="text-align:center; font-size:small; margin-top:6px;">Dual arm</figcaption>
+<figcaption style="display:block; width:100%; text-align:center; font-size:small; margin-top:6px;">Dual Arm</figcaption>
 </figure>
 </td>
 </tr>
