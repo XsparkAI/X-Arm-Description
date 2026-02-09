@@ -82,13 +82,13 @@ The image below displays the 3D asset previews for both the single-arm model and
 <table style="width:100%;">
 <tr>
 <td style="width:50%; padding:8px;">
-<div style="width:100%; display:flex; align-items:center; justify-content:center;">
-<img src="./preview_image/singal_arm.png" alt="Preview left" style="width:100%; height:auto; display:block; object-fit:contain;"/>
+<div style="width:100%; height:320px; display:flex; align-items:center; justify-content:center;">
+<img src="./preview_image/singal_arm.png" alt="Preview left" style="width:100%; height:100%; display:block; object-fit:contain;"/>
 </div>
 </td>
 <td style="width:50%; padding:8px;">
-<div style="width:100%; display:flex; align-items:center; justify-content:center;">
-<img src="./preview_image/dual_arm.png" alt="Preview right" style="width:100%; height:auto; display:block; object-fit:contain;"/>
+<div style="width:100%; height:320px; display:flex; align-items:center; justify-content:center;">
+<img src="./preview_image/dual_arm.png" alt="Preview right" style="width:100%; height:100%; display:block; object-fit:contain;"/>
 </div>
 </td>
 </tr>
