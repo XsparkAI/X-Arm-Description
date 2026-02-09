@@ -1,0 +1,78 @@
+robot_cfg:
+  kinematics:
+    use_usd_kinematics: False
+    usd_path: null
+    usd_robot_root: null
+    isaac_usd_path: null
+    usd_flip_joints: {}
+    usd_flip_joint_limits: {}
+    
+    urdf_path: xarm_urdf/dual_arm/dual_xarm.urdf
+    asset_root_path: null
+    base_link: "fl_base_link"
+    ee_link: "fl_gripper_base"
+    collision_link_names:
+      [
+        "fl_base_link",
+        "fl_link1",
+        "fl_link2",
+        "fl_link3",
+        "fl_link4",
+        "fl_link5",
+        "fl_link6",
+        "fl_gripper_base"
+      ]
+    collision_spheres: ./collision_xarm_left.yml
+    collision_sphere_buffer: 0.000 # 0.0025
+    extra_collision_spheres: null
+    use_global_cumul: True
+    self_collision_ignore:
+      {
+        "fl_base_link": ["fl_link1", "fl_link2", "fl_link3"],
+        "fl_link1": ["fl_link2", "fl_link3"],
+        "fl_link2": ["fl_link3", "fl_link4"],
+        "fl_link3": ["fl_link4", "fl_link5", "fl_link6", "fl_link7", "fl_link8"],
+        "fl_link4": ["fl_link5", "fl_link6", "fl_link7", "fl_link8"],
+        "fl_link5": ["fl_link6", "fl_link7", "fl_link8"],
+        "fl_link6": ["fl_link7", "fl_link8", "fl_gripper_base"],
+        "fl_gripper_base": ["fl_link7", "fl_link8"],
+        "fl_link7": ["fl_link8"]
+      }
+
+    self_collision_buffer:
+      {
+        "fl_base_link": 0.0,
+        "fl_link1": 0.0,
+        "fl_link2": 0.0,
+        "fl_link3": 0.0,
+        "fl_link4": 0.0,
+        "fl_link5": 0.0,
+        "fl_link6": 0.0,
+        "fl_gripper_base": 0.0,
+        "fl_link7": 0.0,
+        "fl_link8": 0.0
+      }
+
+    mesh_link_names:
+      [
+        "fl_base_link",
+        "fl_link1",
+        "fl_link2",
+        "fl_link3",
+        "fl_link4",
+        "fl_link5",
+        "fl_link6",
+        "fl_gripper_base"
+      ]
+    lock_joints: {}
+    extra_links: null
+    cspace:
+      joint_names: ["fl_joint1","fl_joint2","fl_joint3","fl_joint4", "fl_joint5","fl_joint6"]
+
+      retract_config: [0.0, 0.0, 0.0, 0.0, 0.0, 0.00]
+      null_space_weight: [1,1,1,1,1,1]
+      cspace_distance_weight: [1,1,1,1,1,1]
+      max_acceleration: 15.0
+      max_jerk: 500.0
+planner:
+  frame_bias: [0.0, -0.28, 0]

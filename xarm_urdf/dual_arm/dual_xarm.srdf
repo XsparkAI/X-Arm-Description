@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<robot name="dual_xarm">
+  <!-- Left Arm Group (fl_) -->
+  <group name="left_arm">
+    <joint name="fl_joint1"/>
+    <joint name="fl_joint2"/>
+    <joint name="fl_joint3"/>
+    <joint name="fl_joint4"/>
+    <joint name="fl_joint5"/>
+    <joint name="fl_joint6"/>
+    <chain base_link="base_link" tip_link="fl_link6"/>
+  </group>
+
+  <!-- Right Arm Group (fr_) -->
+  <group name="right_arm">
+    <joint name="fr_joint1"/>
+    <joint name="fr_joint2"/>
+    <joint name="fr_joint3"/>
+    <joint name="fr_joint4"/>
+    <joint name="fr_joint5"/>
+    <joint name="fr_joint6"/>
+    <chain base_link="base_link" tip_link="fr_link6"/>
+  </group>
+
+  <!-- Dual Arm Group -->
+  <group name="dual_arm">
+    <group name="left_arm"/>
+    <group name="right_arm"/>
+  </group>
+
+  <!-- Left Arm Disable Collisions -->
+  <disable_collisions link1="fl_link5" link2="fl_link6" reason="Adjacent"/>
+  <disable_collisions link1="fl_link2" link2="fl_link3" reason="Adjacent"/>
+  <disable_collisions link1="fl_link6" link2="fl_link7" reason="Adjacent"/>
+  <disable_collisions link1="fl_link3" link2="fl_link4" reason="Adjacent"/>
+  <disable_collisions link1="fl_link6" link2="fl_link8" reason="Adjacent"/>
+  <disable_collisions link1="fl_link1" link2="fl_link2" reason="Adjacent"/>
+  <disable_collisions link1="fl_base_link" link2="fl_link1" reason="Adjacent"/>
+  <disable_collisions link1="fl_link4" link2="fl_link5" reason="Adjacent"/>
+  <disable_collisions link1="fl_link7" link2="fl_link8" reason="Default"/>
+  <disable_collisions link1="fl_base_link" link2="fl_link2" reason="Never"/>
+  <disable_collisions link1="fl_base_link" link2="fl_link3" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fl_link3" reason="Never"/>
+  <disable_collisions link1="fl_link2" link2="fl_link4" reason="Never"/>
+  <disable_collisions link1="fl_link3" link2="fl_link5" reason="Never"/>
+  <disable_collisions link1="fl_link3" link2="fl_link6" reason="Never"/>
+  <disable_collisions link1="fl_link3" link2="fl_link7" reason="Never"/>
+  <disable_collisions link1="fl_link3" link2="fl_link8" reason="Never"/>
+  <disable_collisions link1="fl_link4" link2="fl_link6" reason="Never"/>
+  <disable_collisions link1="fl_link4" link2="fl_link7" reason="Never"/>
+  <disable_collisions link1="fl_link4" link2="fl_link8" reason="Never"/>
+  <disable_collisions link1="fl_link5" link2="fl_link7" reason="Never"/>
+  <disable_collisions link1="fl_link5" link2="fl_link8" reason="Never"/>
+
+  <!-- Right Arm Disable Collisions -->
+  <disable_collisions link1="fr_link5" link2="fr_link6" reason="Adjacent"/>
+  <disable_collisions link1="fr_link2" link2="fr_link3" reason="Adjacent"/>
+  <disable_collisions link1="fr_link6" link2="fr_link7" reason="Adjacent"/>
+  <disable_collisions link1="fr_link3" link2="fr_link4" reason="Adjacent"/>
+  <disable_collisions link1="fr_link6" link2="fr_link8" reason="Adjacent"/>
+  <disable_collisions link1="fr_link1" link2="fr_link2" reason="Adjacent"/>
+  <disable_collisions link1="fr_base_link" link2="fr_link1" reason="Adjacent"/>
+  <disable_collisions link1="fr_link4" link2="fr_link5" reason="Adjacent"/>
+  <disable_collisions link1="fr_link7" link2="fr_link8" reason="Default"/>
+  <disable_collisions link1="fr_base_link" link2="fr_link2" reason="Never"/>
+  <disable_collisions link1="fr_base_link" link2="fr_link3" reason="Never"/>
+  <disable_collisions link1="fr_link1" link2="fr_link3" reason="Never"/>
+  <disable_collisions link1="fr_link2" link2="fr_link4" reason="Never"/>
+  <disable_collisions link1="fr_link3" link2="fr_link5" reason="Never"/>
+  <disable_collisions link1="fr_link3" link2="fr_link6" reason="Never"/>
+  <disable_collisions link1="fr_link3" link2="fr_link7" reason="Never"/>
+  <disable_collisions link1="fr_link3" link2="fr_link8" reason="Never"/>
+  <disable_collisions link1="fr_link4" link2="fr_link6" reason="Never"/>
+  <disable_collisions link1="fr_link4" link2="fr_link7" reason="Never"/>
+  <disable_collisions link1="fr_link4" link2="fr_link8" reason="Never"/>
+  <disable_collisions link1="fr_link5" link2="fr_link7" reason="Never"/>
+  <disable_collisions link1="fr_link5" link2="fr_link8" reason="Never"/>
+
+  <!-- Cross-Arm Disable Collisions (between left and right arms) -->
+  <disable_collisions link1="fl_base_link" link2="fr_base_link" reason="Never"/>
+  <disable_collisions link1="fl_base_link" link2="fr_link1" reason="Never"/>
+  <disable_collisions link1="fl_base_link" link2="fr_link2" reason="Never"/>
+  <disable_collisions link1="fl_base_link" link2="fr_link3" reason="Never"/>
+  <disable_collisions link1="fl_base_link" link2="fr_link4" reason="Never"/>
+  <disable_collisions link1="fl_base_link" link2="fr_link5" reason="Never"/>
+  <disable_collisions link1="fl_base_link" link2="fr_link6" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fr_base_link" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fr_link1" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fr_link2" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fr_link3" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fr_link4" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fr_link5" reason="Never"/>
+  <disable_collisions link1="fl_link1" link2="fr_link6" reason="Never"/>
+</robot>

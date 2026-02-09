@@ -4,7 +4,7 @@ This repository provides **technical assets of the X-Arm robot** for simulation 
 
 ## Repository Overview
 
-- **URDF models**
+- **Single-arm / Dual-arm URDF models**
 - **Single-arm / Dual-arm USDZ models** 
 - **CuRobo motion planning configurations**
 
@@ -17,12 +17,17 @@ xarm/
 ├── preview_image/   
 │
 ├── xarm_curobo_config/           
-│   ├── collision_xarm.yml       
-│   └── xarm.yml                
+│   ├── dual_arm/     
+│   └── single_arm/
+│       ├── collision_xarm.yml          
+│       └── xarm.yml  
 │
-├── xarm_urdf/                   
+├── xarm_urdf/     
+│   ├── dual_arm/
+│   │   ├── xarm.srdf          
+│   │   └── xarm.urdf                  
 │   ├── meshes/                   
-│   └── urdf/
+│   └── single_arm/
 │       ├── xarm.srdf          
 │       └── xarm.urdf          
 │
@@ -55,7 +60,7 @@ xarm/
 
 ## 2. USDZ Models
 
--  `xarm.usdz`: single-arm model
+-  `xarm_single-arm.usdz`: single-arm model
 -  `xarm_dual-arm.usdz`: dual-arm model
 
  USDZ models are directly usable in **NVIDIA Isaac Sim** and typically include:
@@ -74,17 +79,17 @@ xarm/
 
 The image below displays the 3D asset previews for both the single-arm model and the dual-arm model
 
-<table>
+<table style="width:100%;">
 <tr>
-<td>
-<figure style="text-align:center; margin:0;">
-<img src="./preview_image/singal_arm.png" alt="Preview left" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
-</figure>
+<td style="width:50%; padding:8px;">
+<div style="width:100%; display:flex; align-items:center; justify-content:center;">
+<img src="./preview_image/singal_arm.png" alt="Preview left" style="width:100%; height:auto; display:block; object-fit:contain;"/>
+</div>
 </td>
-<td>
-<figure style="text-align:center; margin:0;">
-<img src="./preview_image/dual_arm.png" alt="Preview right" style="display:block; margin:0 auto; max-width:70%; height:auto;"/>
-</figure>
+<td style="width:50%; padding:8px;">
+<div style="width:100%; display:flex; align-items:center; justify-content:center;">
+<img src="./preview_image/dual_arm.png" alt="Preview right" style="width:100%; height:auto; display:block; object-fit:contain;"/>
+</div>
 </td>
 </tr>
 </table>
@@ -106,7 +111,7 @@ The image below displays the 3D asset previews for both the single-arm model and
 
  Supported scenarios:
 
-- Single-arm planning
+- Single-arm or Dual-arm planning
 - Batch trajectory generation and testing
 
 
